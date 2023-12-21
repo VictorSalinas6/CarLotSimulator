@@ -18,6 +18,6 @@ namespace CarLotSimulator
             }
         }
 
-
+        public static int NumberOfCars {  get; set; }
     }
 }

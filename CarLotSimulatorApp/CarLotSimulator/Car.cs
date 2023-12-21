@@ -26,8 +26,8 @@ namespace CarLotSimulator
         }
 
         public Car() 
-        { 
-
+        {
+            Carlot.NumberOfCars++;
         }
 
         public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDriveable)
@@ -38,6 +38,8 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
+
+            Carlot.NumberOfCars++;
         }
     }
 }

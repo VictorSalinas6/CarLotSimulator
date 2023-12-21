@@ -21,6 +21,8 @@ namespace CarLotSimulator
             car1.MakeEngineNoise(car1.EngineNoise);
             car1.MakeHonkNoise(car1.HonkNoise);
 
+            Console.WriteLine($"The number of cars in the Car Lot is: {Carlot.NumberOfCars}\n");
+
             var car2 = new Car()
             {
                 Year = 1982,
@@ -34,6 +36,8 @@ namespace CarLotSimulator
             car2.MakeEngineNoise(car2.EngineNoise);
             car2.MakeHonkNoise(car2.HonkNoise);
 
+            Console.WriteLine($"The number of cars in the Car Lot is: {Carlot.NumberOfCars}\n");
+
             var car3 = new Car(1969,"Chevrolet","Camaro","Thoooock","Pooom Pooom",true);
 
             car3.MakeEngineNoise(car3.EngineNoise);
@@ -42,6 +46,8 @@ namespace CarLotSimulator
             Carlot.OurCarlot.Add(car1);
             Carlot.OurCarlot.Add(car2);
             Carlot.OurCarlot.Add(car3);
+
+            Console.WriteLine($"The number of cars in the Car Lot is: {Carlot.NumberOfCars}\n");
 
             Carlot.GetProperties();
 
